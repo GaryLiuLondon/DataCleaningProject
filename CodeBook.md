@@ -1,8 +1,5 @@
----
-title: "Getting and Cleaning Data, Course Project CodeBook"
-author: "Gary"
----
-opts_chunk$set(echo=FALSE,eval=FALSE)
+Getting and Cleaning Data, Course Project CodeBook
+---------------------------
 
 1. Read train data
 
@@ -60,7 +57,11 @@ activities<-read.table("./UCI HAR Dataset/activity_labels.txt",sep=" ",header=F,
 levels(data$activity)<-activities$activity
 ```
 
-7.Generate a tidy dataset to include average value of each variable for each activity of each subject
+7.Appropriately labels the data set with descriptive variable names. 
+
+This is not necessary, as this step has been done during data reading using col.names.
+
+8.Generate a tidy dataset to include average value of each variable for each activity of each subject
 
 
 ```r
